@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Chapter - You Don't Know JS</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, shrink-to-fit=false">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/7643bb5ebd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+		<nav>
+			<div class="logo"><i class="fab fa-apple"></i></div>
+				<ul>
+					<li><a href="#">Mac</a></li>
+					<li><a href="#">iPad</a></li>
+					<li><a href="#">iPhone</a></li>
+					<li><a href="#">Watch</a></li>
+					<li><a href="#">TV</a></li>
+					<li><a href="#">Music</a></li>
+					<li><a href="#">Support</a></li>
+				</ul>
+			<div class="search"><i class="fas fa-search"></i></div>
+		</nav>
+
+
+	<main>
+		<div id="popover">
+				<h6>Card chosen:</h6>
+				<small id="chosen-card"></small>
+				<h6>Limit available:</h6>
+				<small id="available-limit"></small>
+		</div>
+		<div class="info">
+			<form method="POST" id="form">
+			<h2>Buy iPhone 11 Pro</h2>
+			<div class="form-group">	
+				<label>Name:</label>
+				<input required type="text" name="">
+			</div>
+			
+			<div class="form-group">	
+				<label>Address:</label>
+				<input required type="text" name="">
+			</div>
+
+			<div class="form-group">	
+				<label>Payment option: <img id="master" style="vertical-align: middle;" width="40" src="card1.png"></label>
+
+				<select required id="select-card">
+					<option disabled selected>Select your credit-card</option>
+					<option value="cardOne">CARD (**5576)</option>
+					<option value="cardTwo">CARD (**2308)</option>
+				</select>
+			</div>
+
+			<div id="insurance-form" class="form-group">	
+				<label id="insure-label">12 month-Insurance? <small>*protection against theft and falls</small></label>
+				<div class="input-group">
+				<label for="radio1">Yes</label>
+				<input required type="radio" name="insurance" id="radio1">
+				</div>
+
+				<div class="input-group">
+				<label for="radio2">No</label>
+				<input required type="radio" name="insurance" id="radio2">
+				</div>
+			</div>
+
+			
+			<div class="form-group">	
+				<label>Installments:</label>
+				<select required id="installments">
+					<option disabled selected>Parcelamento</option>
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+				</select>
+			</div>
+
+			<div class="form-group">
+			<a href="#" class="btn-buy">Buy now</a>
+
+			<h3>Amount: <span id="total-amount"></span></h3>
+			</div>
+		</form>
+
+		<section id="text-iphone" class="text-iphone">
+			<h1>iPhone 11 Pro</h1>
+			<h2>Pro cameras. Pro display. Pro performance.</h2>
+			<small>From $28.29/mo or $679 with trade-in.</small>
+			<a class="btn-click" href="#">Buy <span style="vertical-align: text-bottom;" class="fas fa-angle-right"></span></a>
+		</section>
+
+		<section id="purchase-wait">
+			<p>Please wait, we are processing your purchase...</p>
+			<i class="fas fa-spinner"></i>
+		</section>
+
+		<section id="purchase-successful">
+			<p>Your purchase was successful! <i class="fas fa-check-circle"></i></p>
+		</section>
+
+		<section id="purchase-fail">
+			<p>Unfortunately, we are unable to complete your purchase. Your card does not have sufficient funds.
+			 <i class="fas fa-times-circle"></i></p>
+		</section>
+		</div>
+		<div class="img-bg"></div>
+		<div class="clear"></div>
+	</main>
+
+
+	<footer>
+		<p>Copyright © 2020 Apple Inc. All rights reserved.</p>
+	</footer>
+
+
+
+
+
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
